@@ -1,6 +1,6 @@
 # General
-/sandbox/
-/tmp/
+sandbox/
+tmp/
 
 # Envrionments
 .env
@@ -28,3 +28,7 @@ ipython_config.py
 
 # IDE specific
 .vscode/
+
+# Logs
+logs
+*.log
