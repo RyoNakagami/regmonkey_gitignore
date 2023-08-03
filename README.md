@@ -15,3 +15,9 @@ interactive shellに対して, `<arbitrary-path>/script` PATHを通す
 ```zsh
 % export PATH="<arbitrary-path>/script:$PATH"' >> ~/.zshrc
 ```
+
+templateに従った`.gitignore` fileを生成する
+
+```zsh
+% set_gitignore <template-name without .gitignore>
+```

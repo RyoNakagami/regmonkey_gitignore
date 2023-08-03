@@ -1,0 +1,22 @@
+#!/bin/bash
+
+set -e
+
+
+# Variables
+TARGET_DIR=$(cd $(dirname $0); pwd |xargs dirname)/templates
+if [ "$1" = "" ]; then echo "please sepcify the filename"; exit 1; else SEARCH_FILE=$1; fi
+TARGET_FILE=$TARGET_DIR/$SEARCH_FILE.gitignore
+
+
+# Main
+if [ -f $TARGET_FILE ]; then
+    read -p "Are you sure to newly write .gitignore? (y/N): " yn
+    case "$yn" in
+        [yY]*) cat $TARGET_FILE >> ./.gitignore;;
+        *) echo "abort";;
+    esac
+else
+    echo "$SEARCH_FILE not exists.";
+    exit 1
+fi
