@@ -1,0 +1,8 @@
+# AUTHOR: RyoNak
+# UPDATE: 2023-08-03
+# General
+sandbox/
+tmp/
+
+# Sensitive
+.gpg
