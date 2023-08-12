@@ -1,11 +1,6 @@
-# AUTHOR: RyoNak
-# UPDATE: 2023-08-03
 # General
 sandbox/
 tmp/
-
-# Sensitive
-.gpg
 
 # Envrionments
 .env
@@ -28,12 +23,5 @@ venv.bak/
 logs
 *.log
 
-# pyenv
-.python-version
-
 # Jupyter Notebook
 .ipynb_checkpoints
-
-# IPython
-profile_default/
-ipython_config.py
