@@ -5,7 +5,7 @@ sandbox/
 tmp/
 
 # Sensitive
-.gpg
+*.gpg
 
 # Envrionments
 .env
@@ -18,7 +18,7 @@ venv.bak/
 
 # Directory/file cache
 .DS_Store
-.bak
+*.bak
 .swp
 
 # IDE specific
