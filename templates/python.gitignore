@@ -16,7 +16,8 @@ ENV/
 env.bak/
 venv.bak/
 
-# Directory/file cache
+# Cache
+__pycache__/
 .DS_Store
 *.bak
 .swp
