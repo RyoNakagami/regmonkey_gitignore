@@ -5,4 +5,4 @@ sandbox/
 tmp/
 
 # Sensitive
-.gpg
+*.gpg

@@ -14,11 +14,11 @@ env.bak/
 venv.bak/
 
 # Sensitive
-.gpg
+*.gpg
 
 # Directory/file cache
 .DS_Store
-.bak
+*.bak
 .swp
 
 # IDE specific
