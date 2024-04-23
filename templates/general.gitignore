@@ -24,3 +24,7 @@ env.bak/
 # Logs
 logs
 *.log
+
+# bfg
+..bfg-report
+bfg_check_list/

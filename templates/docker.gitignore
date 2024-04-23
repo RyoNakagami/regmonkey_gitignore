@@ -6,3 +6,7 @@ tmp/
 
 # Sensitive
 *.gpg
+
+# bfg
+..bfg-report
+bfg_check_list/

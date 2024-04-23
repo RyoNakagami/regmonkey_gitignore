@@ -28,5 +28,9 @@ venv.bak/
 logs
 *.log
 
+# bfg
+..bfg-report
+bfg_check_list/
+
 # Jupyter Notebook
 .ipynb_checkpoints

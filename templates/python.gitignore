@@ -31,6 +31,10 @@ __pycache__/
 logs
 *.log
 
+# bfg
+..bfg-report
+bfg_check_list/
+
 # pyenv
 .python-version
 

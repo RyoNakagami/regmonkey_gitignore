@@ -31,6 +31,9 @@ renv/
 logs
 *.log
 
+# bfg
+..bfg-report
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
