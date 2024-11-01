@@ -1,6 +1,5 @@
 # AUTHOR: RyoNak
 # UPDATE: 2024-11-01
-
 # General
 sandbox/
 tmp/
@@ -8,7 +7,7 @@ tmp/
 # Sensitive
 *.gpg
 
-# Environments
+# Envrionments
 .env
 env/
 ENV/
@@ -18,17 +17,12 @@ env.bak/
 .DS_Store
 *.bak
 *.swp
-*.tmp
-*.temp
 
 # IDE specific
 .vscode/
-.idea/
-*.sublime-workspace
-*.sublime-project
 
 # Logs
-logs/
+logs
 *.log
 
 # bfg
@@ -102,3 +96,14 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+# ---------------------
+# Quarto Setting
+# ---------------------
+# general
+_book
+/.quarto/
+
+# general
+_book
+/.quarto/

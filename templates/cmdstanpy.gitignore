@@ -19,13 +19,12 @@ env.bak/
 *.bak
 *.swp
 *.tmp
-*.temp
+*.cache
 
 # IDE specific
 .vscode/
 .idea/
-*.sublime-workspace
-*.sublime-project
+*.code-workspace
 
 # Logs
 logs/
@@ -102,3 +101,10 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+
+# ---------------------
+# cmdstanpy
+# ---------------------
+stancode/*
+!stancode/*.stan
