@@ -2,21 +2,41 @@
 
 set -e
 
+# color
+reset=$'\e[0m'
+cyan=$'\e[36m'
+red=$'\e[31m'
+green=$'\e[32m'
 
-# Variables
-TARGET_DIR=$(cd $(dirname $0); pwd |xargs dirname)/templates
-if [ "$1" = "" ]; then echo "please sepcify the filename"; exit 1; else SEARCH_FILE=$1; fi
-TARGET_FILE=$TARGET_DIR/$SEARCH_FILE.gitignore
+# global variables
+TEMPLATE_SOURCE_DIR=$(cd $(dirname $0); pwd |xargs dirname)/templates
 
+# functions
+choose_templates() {
+    TEMPLATE="general"
+    ls $TEMPLATE_SOURCE_DIR
+    read -p "${cyan}please choose your template type from the above: ${reset} [${green}general${reset}] " input_template
+    TEMPLATE="${input_template:-$TEMPLATE}"
+
+    TARGET_FILE=$TEMPLATE_SOURCE_DIR/$TEMPLATE.gitignore
+    if [ ! -f $TARGET_FILE ]; then
+        echo "${red}$TEMPLATE not exists.${reset}"
+        exit 1
+    fi
+
+
+}
 
 # Main
 if [ -f $TARGET_FILE ]; then
-    read -p "Are you sure to newly write .gitignore? (y/N): " yn
+    read -p "${cyan}Are you sure to newly write .gitignore? (y/N):${reset} " yn
     case "$yn" in
-        [yY]*) cat $TARGET_FILE >> ./.gitignore;;
+        [yY]*)
+            choose_templates 
+            cat $TARGET_FILE > ./.gitignore;;
         *) echo "abort";;
     esac
 else
-    echo "$SEARCH_FILE not exists.";
+    echo "$SEARCH_FILE ${red}not exists.${reset}";
     exit 1
 fi
