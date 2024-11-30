@@ -1,0 +1,10 @@
+[project]
+name = "regmonkey_gitignore"
+version = "1.2.0"
+description = "document templates for packagge development"
+authors = ["Ryo Nakagami <nakagamiryo0901@gmail.com>"]
+license = "MIT"
+
+[dependencies]
+os = { ubuntu >= "20.04", linux >= "5.4", macos >= "10.15", darwin >= "20.0.0" }
+bash = ">= 5.0"
