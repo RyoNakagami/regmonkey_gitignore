@@ -1,8 +1,8 @@
 # AUTHOR: RyoNak
 # UPDATE: 2023-08-03
-#-------------------------------
+# ---------------------
 # General
-#-------------------------------
+# ---------------------
 sandbox/
 tmp/
 
@@ -11,36 +11,39 @@ tmp/
 
 # Envrionments
 .env
-.venv
 env/
-venv/
 ENV/
 env.bak/
-venv.bak/
-renv/
 
-# Cache
+# Ignore cache/temporary files
 .DS_Store
 *.bak
 *.swp
+*.tmp
+*.bak
+*.old
 
-# IDE specific
-.vscode/
-
-# Logs
+# Ignore log files
 logs
 *.log
 
-# bfg
+# Ignore directories
+node_modules/
+vendor/
+dist/
+build/
+
+# Ignore bfg
 ..bfg-report
 bfg_check_list/
 
-# Jupyter Notebook
-.ipynb_checkpoints
 
 #-------------------------------
 # R specific
 #-------------------------------
+# Jupyter Notebook
+.ipynb_checkpoints
+
 # History files
 .Rhistory
 .Rapp.history

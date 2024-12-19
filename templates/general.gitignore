@@ -1,6 +1,9 @@
 # AUTHOR: RyoNak
-# UPDATE: 2023-08-03
+# UPDATE: 2024-12-19
+
+# ---------------------
 # General
+# ---------------------
 sandbox/
 tmp/
 
@@ -13,18 +16,24 @@ env/
 ENV/
 env.bak/
 
-# Cache
+# Ignore cache/temporary files
 .DS_Store
 *.bak
 *.swp
+*.tmp
+*.bak
+*.old
 
-# IDE specific
-.vscode/
-
-# Logs
+# Ignore log files
 logs
 *.log
 
-# bfg
+# Ignore directories
+node_modules/
+vendor/
+dist/
+build/
+
+# Ignore bfg
 ..bfg-report
 bfg_check_list/

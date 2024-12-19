@@ -1,36 +1,40 @@
 # AUTHOR: RyoNak
 # UPDATE: 2024-11-01
 
+# ---------------------
 # General
+# ---------------------
 sandbox/
 tmp/
 
 # Sensitive
 *.gpg
 
-# Environments
+# Envrionments
 .env
 env/
 ENV/
 env.bak/
 
-# Cache
+# Ignore cache/temporary files
 .DS_Store
 *.bak
 *.swp
 *.tmp
-*.cache
+*.bak
+*.old
 
-# IDE specific
-.vscode/
-.idea/
-*.code-workspace
-
-# Logs
-logs/
+# Ignore log files
+logs
 *.log
 
-# bfg
+# Ignore directories
+node_modules/
+vendor/
+dist/
+build/
+
+# Ignore bfg
 ..bfg-report
 bfg_check_list/
 
