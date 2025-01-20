@@ -8,7 +8,13 @@ sandbox/
 tmp/
 
 # Sensitive
+config/
 *.gpg
+
+# BFG Repo-Cleaner settings
+.bfg/
+..bfg-report
+bfg_check_list/
 
 # Envrionments
 .env
@@ -33,7 +39,3 @@ node_modules/
 vendor/
 dist/
 build/
-
-# Ignore bfg
-..bfg-report
-bfg_check_list/

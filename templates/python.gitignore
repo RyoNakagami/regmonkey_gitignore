@@ -1,5 +1,5 @@
 # AUTHOR: RyoNak
-# UPDATE: 2024-11-01
+# UPDATE: 2025-01-20
 # ---------------------
 # General
 # ---------------------
@@ -7,7 +7,13 @@ sandbox/
 tmp/
 
 # Sensitive
+config/
 *.gpg
+
+# BFG Repo-Cleaner settings
+.bfg/
+..bfg-report
+bfg_check_list/
 
 # Envrionments
 .env
@@ -31,14 +37,10 @@ logs
 node_modules/
 vendor/
 
-# Ignore bfg
-..bfg-report
-bfg_check_list/
-
 # ---------------------
 # Python
 # ---------------------
-# Python ENvironment
+# Python Environment
 .python-version
 venv/
 .venv/
@@ -91,6 +93,7 @@ nosetests.xml
 coverage.xml
 *.cover
 *.py,cover
+.pytest_cache
 
 # mypy
 .mypy_cache/
@@ -99,6 +102,9 @@ dmypy.json
 
 # Pyre
 .pyre/
+
+# ruff cache
+.ruff_cache
 
 # Cython debug symbols
 cython_debug/

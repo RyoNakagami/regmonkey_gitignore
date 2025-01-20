@@ -7,7 +7,13 @@ sandbox/
 tmp/
 
 # Sensitive
+config/
 *.gpg
+
+# BFG Repo-Cleaner settings
+.bfg/
+..bfg-report
+bfg_check_list/
 
 # Envrionments
 .env
@@ -36,6 +42,15 @@ build/
 # Ignore bfg
 ..bfg-report
 bfg_check_list/
+
+# ---------------------
+# Quarto Setting
+# ---------------------
+# general
+_site/
+_freeze/
+_book
+/.quarto/
 
 # ---------------------
 # Python
@@ -104,10 +119,3 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-
-# ---------------------
-# Quarto Setting
-# ---------------------
-# general
-_book
-/.quarto/
