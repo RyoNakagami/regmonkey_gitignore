@@ -5,6 +5,9 @@
 sandbox/
 tmp/
 
+# config
+.editorconfig
+
 # Sensitive
 *.gpg
 
